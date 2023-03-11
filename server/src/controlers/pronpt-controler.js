@@ -1,6 +1,6 @@
 //O controler tem a função de controlar o request e o response
 // Quem acessar a aplicação ira acessar ela apartir do controlador
-const { OpenAIApi } = require("openai")
+const { OpenAIApi } = require("openai") // 
 const openai = require("../config/openai") // importa as configurações imbutidas
 const InputModel = require("../model/input-model") // importa  o modelo de entrada(Objeto com propriedade prompt)
 module.exports  = { // controla tudo que está exportando e trabalhando

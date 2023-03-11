@@ -1,13 +1,13 @@
-const express = require("express") // importa as bibliotecas express e cors
-const cors = require("cors")
-const routes = require("./routes/routes") // importa as rotas
+const express = require("express") // Importa as bibliotecas express 
+const cors = require("cors") // Importa as bibliotecas cors
+const routes = require("./routes/routes") // Importa as rotas
 
-require("dotenv").config() // declara uma nova instancia
+require("dotenv").config() // Deixa caregado na memoria o molho de chaves(keyring)
 
-const app = express() //Dis que é uma aplicação express
+const app = express() //Declara que essa é uma aplicação express
 
 app.use(express.json()) //Fala que a aplicação ira trabalhar com formato de json
-app.use(cors()) //
-app.use(routes)// fala que a aplicação estara usando essas rotas
+app.use(cors()) // Fala que ira utilizar o cors
+app.use(routes)// Fala que a aplicação estara usando essas rotas
 
-module.exports = app // exporta o app
+module.exports = app // Exporta o app
